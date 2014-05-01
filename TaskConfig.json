@@ -1,0 +1,38 @@
+{
+    "tools": {
+        "save": 1,
+        "nextTaskPerson": 1,
+        "submit": 1,
+        "back": 0,
+        "follow": 1,
+        "idea": [
+            {
+                "optionText": "同意",
+                "optionValue": 1
+            },
+            {
+                "optionText": "不同意",
+                "optionValue": 2
+            }
+        ]
+    },
+    "nextTasks": [
+        {
+            "taskName": "上级审批",
+            "taskDefKey": "sjsp",
+            "condition": "1",
+            "user": {
+                "isSelectUser": 0,
+                "isMultiple": 0,
+                "userExp": "query.selectUsers(deptId , '1')"
+            }
+        }
+    ],
+    "backTasks": [
+        {
+            "taskName": "上级审批",
+            "taskDefKey": "qc",
+            "condition": "-1"
+        }
+    ]
+}
